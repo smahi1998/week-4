@@ -10,12 +10,12 @@ public class Calculator {
     // Default constructor
 
     // adding number
-    public void add(int number){
-        result += number;
+    public void add(int number1, int number2){
+        result = number1 + number2;
     }
     // substracting number
-    public void substract(int number){
-        result -= number;
+    public void substract(int number1, int number2){
+        result = number1 - number2;
     }
 
     // multiplying number
@@ -52,22 +52,22 @@ public class Calculator {
         // instantiate an object calculator
         Calculator calculator = new Calculator();
 // passing num1 in the java add function
-         calculator.add(num1);
+         calculator.add(num1,num2);
         // display the result add
-        System.out.print("\nThe result of calculator is " +calculator.getResult());
+        System.out.print("\nThe sum of " +num1+" and " + num2+" is " +calculator.getResult());
 // passing num1 in the java substract function
 
-        calculator.substract(num2);
+        calculator.substract(num2,num1);
         // display the result substract
-        System.out.print("\nThe result of calculator is " +calculator.getResult());
+        System.out.print("\nThe diffrence of "+num1+" and " + num2+" is " +calculator.getResult());
        // passing num1 and num2 in the java multiply function
         calculator.multiply(num1,num2);
         // display the result for multiply
-        System.out.print("\nThe result of calculator is " +calculator.getResult());
+        System.out.print("\nThe product of "+num1+" and " + num2+" is " +calculator.getResult());
         //passing num1 and num2 in the java divide function
         calculator.divide(num2,num1);
         // display the result for divide
-        System.out.print("\nThe result of calculator is " +calculator.getResult());
+        System.out.print("\nThe quotient of "+num1+" and " + num2+" is " +calculator.getResult());
 
 
 
